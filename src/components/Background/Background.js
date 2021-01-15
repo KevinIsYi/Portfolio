@@ -17,18 +17,21 @@ export const Background = () => {
 
         for (let key = 1; key <= numberOfShapes; ++key) {
             const random = Math.random();
-            const figurePosition = Math.floor(random * numberOfFigures);
-            const figure = figures[figurePosition];
-            const animationDelay = `${random * 50}s`;
-            const left = Math.floor(random * innerWidth);
-            const colorFigure = colors[Math.floor(Math.random() * 3)];
+            const figurePosition = Math.floor(random * numberOfFigures); // [0, figures.length - 1]
+            const figure = figures[figurePosition]; // Name of a figure
+            const animationDelay = `${random * 50}s`; // Random number between [0, 50]
+            const left = Math.floor(random * innerWidth); // position: fixed; left: ?
+            const colorFigure = colors[Math.floor(Math.random() * 3)]; // Selection of color
 
             const style = {
                 left,
                 animationDelay,
+                animationDuration: `${random * 20 + 1}s` // Random number between 1 and 10
             };
             
-            const figureColor = figurePosition === 2 ? ['borderBottom', `50px solid ${ colorFigure }`] : ['backgroundColor', colorFigure];
+            const figureColor = figurePosition === 2 // If it is a triangle, css is 'borderBottom: 50px solid color', else 'backgroundColor: color'
+                ? ['borderBottom', `50px solid ${colorFigure}`]
+                : ['backgroundColor', colorFigure];
             style[figureColor[0]] = figureColor[1];
 
             fillAnimations.push([key, figure, style]);
