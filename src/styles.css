@@ -5,6 +5,14 @@
     --gray-color: #252525;
     --orange-color: #ff6803; 
     --pink-color: #ef0f73;
+    --roboto: 'Roboto', sans-serif;
+    --lobster: 'Lobster', cursive;
+}
+
+/* ****************** */
+a {
+    text-decoration: none;
+    color: black;   
 }
 
 .center-xy {
@@ -14,7 +22,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* BACKGROUND */
 .blue-background {
     background-color: var(--blue-color);
 }
@@ -25,4 +32,26 @@
     background-color: var(--pink-color);
 }
 
+.gray-text {
+    color: var(--gray-color);
+}
 
+.width-cover {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lobster {
+    font-family: var(--lobster);
+}
+
+.roboto {
+    font-family: var(--roboto);
+}
+
+.bold {
+    font-weight: bold;
+}

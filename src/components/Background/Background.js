@@ -5,7 +5,6 @@ export const Background = () => {
 
     const [animations, setAnimations] = useState([]);
     
-    
     useEffect(() => {
         const { innerWidth } = window;
         const figures = ['shape', 'shape circle', 'triangle'];
@@ -26,13 +25,13 @@ export const Background = () => {
             const style = {
                 left,
                 animationDelay,
-                animationDuration: `${random * 20 + 1}s` // Random number between 1 and 10
+                animationDuration: `${random * 50 + 10}s` // Random number between 1 and 10
             };
             
             const figureColor = figurePosition === 2 // If it is a triangle, css is 'borderBottom: 50px solid color', else 'backgroundColor: color'
                 ? ['borderBottom', `50px solid ${colorFigure}`]
                 : ['backgroundColor', colorFigure];
-            style[figureColor[0]] = figureColor[1];
+            style[figureColor[0]] = figureColor[1]; // Add atribute to style
 
             fillAnimations.push([key, figure, style]);
         }
@@ -40,10 +39,8 @@ export const Background = () => {
         
     }, [setAnimations]);
 
-
-
     return (
-        <>
+        <div className="background">
             {
                     animations.map(([key, figure, style]) => (
                         <div
@@ -53,6 +50,6 @@ export const Background = () => {
                         />
                     ))
             }
-        </>
+        </div>
     )
 }
