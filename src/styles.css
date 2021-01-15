@@ -1,0 +1,28 @@
+/* GLOBAL CSS */
+
+:root {
+    --blue-color: #333399;
+    --gray-color: #252525;
+    --orange-color: #ff6803; 
+    --pink-color: #ef0f73;
+}
+
+.center-xy {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* BACKGROUND */
+.blue-background {
+    background-color: var(--blue-color);
+}
+.orange-background {
+    background-color: var(--orange-color);
+}
+.pink-background {
+    background-color: var(--pink-color);
+}
+
+
