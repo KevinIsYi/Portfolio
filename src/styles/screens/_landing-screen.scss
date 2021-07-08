@@ -1,0 +1,35 @@
+.main-text {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+
+    a {
+        text-align: right;
+    }
+
+    h1 {
+        font-size: 50px;
+
+        span {
+            color: $pink;
+            margin: 0 10px;
+        }
+    }
+
+    @include screen-480 {
+        width: 80%;
+
+        h1 {
+            font-size: 65px;
+        }
+    }
+
+    @include screen-768 {
+        width: 60%;
+
+        h1 {
+            font-size: 80px;
+        }
+    }
+}

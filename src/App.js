@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Spinner } from "./components/Spinner/Spinner";
 import { AppRouter } from "./router/AppRouter";
 
-import "./normalize.css";
-
 const App = () => {
 
     const [isLoading, setIsLoading] = useState(true);

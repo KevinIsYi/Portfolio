@@ -1,0 +1,46 @@
+.header {
+    align-items: center;
+    display: flex;
+    font-family: $roboto;
+    font-size: 18px;
+    font-weight: bold;
+    height: 10vh;
+    justify-content: space-around;
+}
+
+.name {
+    display: none;
+    font-size: 35px;
+
+    @include screen-480 {
+        display: block;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    border-bottom: solid $light 3px;
+    margin: 10px;
+    outline: none;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        border-bottom: solid $orange 3px;
+        color: $orange;
+        cursor: pointer;
+    }
+
+    @include screen-768 {
+        margin: auto 15px;
+    }
+}
+
+.active-link,
+.active-link::visited {
+    border-bottom: solid $blue 3px;
+    color: $blue;
+}

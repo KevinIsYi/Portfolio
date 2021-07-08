@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './background.css';
 
 export const Background = () => {
 

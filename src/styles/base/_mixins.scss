@@ -1,0 +1,29 @@
+@mixin screen-480 {
+    @media(min-width: $screen-480) {
+        @content;
+    }
+}
+
+@mixin screen-600 {
+    @media(min-width: $screen-600) {
+        @content;
+    }
+}
+
+@mixin screen-768 {
+    @media(min-width: $screen-768) {
+        @content;
+    }
+}
+
+@mixin screen-900 {
+    @media(min-width: $screen-900) {
+        @content;
+    }
+}
+
+@mixin screen-1200 {
+    @media(min-width: $screen-1200) {
+        @content;
+    }
+}

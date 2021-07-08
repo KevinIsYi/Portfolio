@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+    color: $dark;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center-abs-xy {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blue-bk {
+    background-color: $blue;
+}
+
+.orange-bk {
+    background-color: $orange;
+}
+
+.pink-bk {
+    background-color: $pink;
+}
+
+.gray-text {
+    color: $gray;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lobster {
+    font-family: $lobster;
+}
+
+.roboto {
+    font-family: $roboto;
+}
+
+.width-100 {
+    width: 100%;
+}
