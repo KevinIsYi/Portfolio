@@ -7,7 +7,7 @@ import {
 import { Background } from "../components/Background/Background"
 import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
-import { LandingPage } from "../screens/LandingPage/LandingPage"
+import { LandingPage } from "../pages/LandingPage/LandingPage"
 
 export const AppRouter = () => {
     return (

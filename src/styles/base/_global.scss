@@ -3,8 +3,18 @@ a {
     color: $dark;
 }
 
+.active-link,
+.active-link::visited {
+    border-bottom: solid $blue 3px;
+    color: $blue;
+}
+
 .absolute {
     position: absolute;
+}
+
+.fixed {
+    position: fixed;
 }
 
 .relative {
@@ -19,6 +29,14 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
 }
 
 .blue-bk {
@@ -47,6 +65,10 @@ a {
 
 .roboto {
     font-family: $roboto;
+}
+
+.transition {
+    transition: $transition;
 }
 
 .width-100 {
