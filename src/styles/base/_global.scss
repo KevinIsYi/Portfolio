@@ -1,3 +1,20 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: $light;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $blue;
+}
+
 a {
     text-decoration: none;
     color: $dark;
@@ -25,14 +42,26 @@ a {
     font-weight: bold;
 }
 
+.lighter {
+    font-weight: lighter;
+}
+
 .center-abs-xy {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
+.center-x {
+    margin: auto;
+}
+
 .flex {
     display: flex;
+}
+
+.grid {
+    display: grid;
 }
 
 .hidden {
@@ -51,6 +80,10 @@ a {
     background-color: $pink;
 }
 
+.yellow-bk {
+    background-color: $yellow;
+}
+
 .gray-text {
     color: $gray;
 }
@@ -65,6 +98,19 @@ a {
 
 .roboto {
     font-family: $roboto;
+}
+
+.remove-scrollbar-parent {
+    overflow: hidden;
+}
+
+.remove-scrollbar-children {
+    overflow: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 .transition {
