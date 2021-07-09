@@ -3,7 +3,6 @@ export const ResumePage = () => {
     return (
         <div className="resume__container fixed roboto">
             <div className="resume absolute center-abs-xy">
-
                 <div className="resume__vertical-lines-container absolute flex">
                     <div />
                     <div />
@@ -12,11 +11,21 @@ export const ResumePage = () => {
                     <div />
                     <div />
                 </div>
-                <div className="resume__right-circle absolute yellow-bk" />
-                <div className="resume__bottom-rectangle absolute yellow-bk" />
-
+                <div className="resume__right-circle hidden absolute yellow-bk" />
+                <div className="resume__bottom-rectangle hidden absolute yellow-bk" />
                 <div className="resume__content grid">
-                    <div className="relative"></div>
+                    <div className="resume__personal-info-container relative">
+                        <div className="resume__name text-center relative lobster">
+                            <h1 className="absolute center-abs-xy">Kevin Rodríguez</h1>
+                        </div>
+                        <div className="resume__about-me-content">
+                            <h1>Contact</h1>
+                            <div>
+                                <p><span>Email:</span> rodriguezkevin95@gmail.com</p>
+                                <p><span>Phone:</span> +52 3318357366</p>
+                            </div>
+                        </div>
+                    </div>
                     <div className="resume__info-content-container relative center-x">
                         <h1>Frontend Developer</h1>
                         <div className="resume-info-card">

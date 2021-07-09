@@ -18,18 +18,24 @@
 }
 
 .resume__content {
-    width: 90%;
-    height: 1362px;
     grid-template-columns: 312px 623px;
     margin: 100px auto;
-    gap: 50px;
+    width: 90%;
+}
 
+.resume__personal-info-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .resume__info-content-container {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
     width: 100%;
-    margin-left: 10px;
 
     h1 {
         font-size: 60px;
@@ -38,7 +44,6 @@
 }
 
 .resume-info-card {
-    margin-left: 25px;
 
     h1 {
         border-bottom-width: 5px;
@@ -53,43 +58,62 @@
 }
 
 .resume__right-circle {
+    border-radius: 0 0 0 150px;
+    height: 150px;
     right: 0;
     width: 150px;
-    height: 150px;
-    border-radius: 0 0 0 150px;
+
+    @include screen-1200 {
+        display: block;
+    }
 }
 
 .resume__bottom-rectangle {
-    width: 100%;
-    height: 200px;
-    top: 259%;
     background-color: $yellow;
+    height: 100px;
+    top: 225%;
+    width: 100%;
+
+    @include screen-1200 {
+        display: block;
+    }
 }
 
-/*
+
 .resume__vertical-lines-container {
+    gap: 100px;
     justify-content: space-between;
     left: 150px;
     top: 0;
-    gap: 100px;
 
     div {
-        height: 275px;
-        width: 3px;
         background-color: $blue;
+        height: 475px;
+        width: 3px;
     }
 }
 
 .resume__horizontal-lines-container {
     flex-direction: column;
+    gap: 100px;
     left: 0;
     top: 150px;
-    gap: 100px;
 
     div {
+        background-color: $blue;
         height: 3px;
         width: 400px;
-        background-color: $blue;
     }
 }
-*/
+
+.resume__name {
+    background-color: $yellow;
+    border-radius: 5px;
+    height: 312px;
+    width: 100%;
+    
+    h1 {
+        font-size: 65px;
+        margin: 0;
+    }
+}
