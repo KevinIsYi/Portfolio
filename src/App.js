@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Background } from "./components/Background/Background";
 import { Spinner } from "./components/Spinner/Spinner";
 import { AppRouter } from "./router/AppRouter";
 
@@ -14,11 +15,12 @@ const App = () => {
 
     return (
         <>
+            <Background />
             {
                 isLoading
-                ?
+                    ?
                     <Spinner />
-                :
+                    :
                     <AppRouter />
 
             }
