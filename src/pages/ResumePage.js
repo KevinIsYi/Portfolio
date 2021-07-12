@@ -15,14 +15,15 @@ export const ResumePage = () => {
                 <div className="resume__bottom-rectangle hidden absolute yellow-bk" />
                 <div className="resume__content grid">
                     <div className="resume__personal-info-container relative">
-                        <div className="resume__name text-center relative lobster">
+                        <div className="resume__name text-center relative lobster yellow-bk">
                             <h1 className="absolute center-abs-xy">Kevin Rodríguez</h1>
                         </div>
                         <div className="resume__about-me-content">
                             <h1>Contact</h1>
                             <div>
-                                <p><span>Email:</span> rodriguezkevin95@gmail.com</p>
-                                <p><span>Phone:</span> +52 3318357366</p>
+                                <p><span className="bold">Email:</span> rodriguezkevin95@gmail.com</p>
+                                <p><span className="bold">Phone:</span> +52 3318357366</p>
+                                <p><span className="bold">Github:</span> https://github.com/KevinIsYi</p>
                             </div>
                         </div>
                     </div>
@@ -40,12 +41,12 @@ export const ResumePage = () => {
                         <div className="resume-info-card">
                             <h1>Education & Achievements</h1>
                             <div className="resume__info-content">
-                                <p className="bold">&#8226; Bachelor Degree at Universidad de Guadalajara (CUCEI)</p>
-                                <p className="lighter">August 2018 - Till the Date</p>
+                                <p className="bold">&#8226; Bachelor Degree at Universidad de Guadalajara (August 2018 - Till the Date)</p>
+                                <p className="lighter">CUCEI - Studying Computer Science</p>
                             </div>
                             <div className="resume__info-content">
-                                <p className="bold">&#8226; Teacher at Algorithmics Club CUCEI</p>
-                                <p className="lighter">August 2020 - February 2021</p>
+                                <p className="bold">&#8226; Teacher at Algorithmics Club CUCEI (August 2020 - February 2021)</p>
+                                <p className="lighter">Club dedicated to introduce students to competitive programming by teaching them basic algorithms and data structures.</p>
                             </div>
                         </div>
                         <div className="resume-info-card">
@@ -56,7 +57,7 @@ export const ResumePage = () => {
                             </div>
                             <div className="resume__info-content">
                                 <p className="bold">&#8226; Systec Solutions (March 2021 - Till the Date)</p>
-                                <p className="lighter"><span className="bold">Frontend Developer: </span>I Worked developing real-time application with NextJS and socket.io</p>
+                                <p className="lighter"><span className="bold">Frontend Developer: </span>I Worked developing real-time application with NextJS, NodeJS, node-media-server and socket.io</p>
                             </div>
                         </div>
                         <div className="resume-info-card">
@@ -78,6 +79,19 @@ export const ResumePage = () => {
                                         <p className="lighter">MongoDB</p>
                                         <p className="lighter">SASS</p>
                                         <p className="lighter">VainillaJS</p>
+                                    </div>
+                                </div>
+                                <p className="bold">&#8226; Soft Skills</p>
+                                <div className="resume__technologies grid">
+                                    <div>
+                                        <p className="lighter">Open to any feedback or comment</p>
+                                        <p className="lighter">Problem Solving</p>
+                                        <p className="lighter">Patience</p>
+                                    </div>
+                                    <div>
+                                        <p className="lighter">Teamwork and collaboration</p>
+                                        <p className="lighter">Accountability</p>
+                                        <p className="lighter">Self-learning</p>
                                     </div>
                                 </div>
                             </div>
