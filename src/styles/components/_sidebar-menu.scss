@@ -28,6 +28,7 @@
         color: $dark;
         font-size: 30px;
         text-decoration: none;
+        transition: $transition;
     }
 
     .sidebar-menu__sidenav-close-button {
@@ -38,4 +39,11 @@
         right: 25px;
         font-size: 36px;
     }
+}
+
+.sidebar-menu__active-link {
+    color: $light;
+    padding: 10px 0;
+    border-top: solid 3px $gray;
+    border-bottom: solid 3px $gray;
 }

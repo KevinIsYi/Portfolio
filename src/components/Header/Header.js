@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { SidebarMenu } from '../../SidebarMenu/SidebarMenu';
+import { SidebarMenu } from '../SidebarMenu/SidebarMenu';
 
 export const Header = () => {
 
