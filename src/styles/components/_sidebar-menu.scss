@@ -1,0 +1,41 @@
+.sidebar-menu__icon {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+
+    @include screen-600 {
+        display: none;
+    }
+}
+
+.sidebar-menu__sidenav {
+    align-items: center;
+    background-color: $yellow;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    left: 0;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    z-index: 1;
+    width: 0;
+
+    a {
+        color: $dark;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .sidebar-menu__sidenav-close-button {
+        color: $dark;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 36px;
+    }
+}

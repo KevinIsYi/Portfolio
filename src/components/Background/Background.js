@@ -9,13 +9,12 @@ export const Background = () => {
         const figures = ['shape', 'shape circle', 'triangle'];
         const colors = ['#ef0f73', '#ff6803', '#333399'];
 
+        const numberOfShapes = Math.round(innerWidth / 85);
         const fillAnimations = [];
-        const numberOfFigures = figures.length;
-        const numberOfShapes = Math.round(innerWidth / 50);
-
+        
         for (let key = 1; key <= numberOfShapes; ++key) {
             const random = Math.random();
-            const figurePosition = Math.floor(random * numberOfFigures); // [0, figures.length - 1]
+            const figurePosition = key % 3; // [0, figures.length - 1]
             const figure = figures[figurePosition]; // Name of a figure
             const animationDelay = `${random * 50}s`; // Random number between [0, 50]
             const left = Math.floor(random * innerWidth); // position: fixed; left: ?
@@ -44,7 +43,7 @@ export const Background = () => {
                 animations.map(({ key, figure, style }) => (
                     <div
                         key={key}
-                        className={`anim ${figure}`}
+                        className={`fixed anim ${figure}`}
                         style={style}
                     />
                 ))

@@ -7,16 +7,10 @@
 }
 
 .header__name {
-    display: none;
     font-size: 35px;
-
-    @include screen-480 {
-        display: block;
-    }
 }
 
 .header__nav {
-    display: flex;
     justify-content: center;
 
     a {
@@ -34,5 +28,9 @@
         @include screen-768 {
             margin: auto 15px;
         }
+    }
+
+    @include screen-600 {
+        display: flex;
     }
 }
