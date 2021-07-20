@@ -2,7 +2,7 @@ export const ResumePage = () => {
 
     return (
         <div className="resume__container fixed roboto">
-            <div className="resume absolute center-abs-xy">
+            <div className="resume shadow absolute center-abs-xy">
                 <div className="resume__vertical-lines-container absolute flex">
                     <div />
                     <div />
