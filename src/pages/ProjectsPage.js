@@ -7,7 +7,7 @@ const projects = [
         name: 'Sudoku Solver',
         image: '/assets/sudoku-preview.jpeg',
         link: 'https://ecstatic-albattani-219dd2.netlify.app/',
-        description: 'Implemente',
+        description: 'Sudoku Solver and Generator',
         technologies: [
             {
                 id: 1,
@@ -28,111 +28,7 @@ const projects = [
                 color: '#35A8DB'
             }
         ],
-    }, {
-        id: 1,
-        name: 'Sudoku Solver',
-        image: '/assets/sudoku-preview.jpeg',
-        link: 'https://ecstatic-albattani-219dd2.netlify.app/',
-        description: 'Implemente',
-        technologies: [
-            {
-                id: 1,
-                name: 'VainillaJS',
-                icon: 'fa-js',
-                color: '#F7E018'
-            },
-            {
-                id: 2,
-                name: 'HTML',
-                icon: 'fa-html5',
-                color: '#F37731'
-            },
-            {
-                id: 3,
-                name: 'CSS',
-                icon: 'fa-css3-alt',
-                color: '#35A8DB'
-            }
-        ],
-    }, {
-        id: 1,
-        name: 'Sudoku Solver',
-        image: '/assets/sudoku-preview.jpeg',
-        link: 'https://ecstatic-albattani-219dd2.netlify.app/',
-        description: 'Implemente',
-        technologies: [
-            {
-                id: 1,
-                name: 'VainillaJS',
-                icon: 'fa-js',
-                color: '#F7E018'
-            },
-            {
-                id: 2,
-                name: 'HTML',
-                icon: 'fa-html5',
-                color: '#F37731'
-            },
-            {
-                id: 3,
-                name: 'CSS',
-                icon: 'fa-css3-alt',
-                color: '#35A8DB'
-            }
-        ],
-    }, {
-        id: 1,
-        name: 'Sudoku Solver',
-        image: '/assets/sudoku-preview.jpeg',
-        link: 'https://ecstatic-albattani-219dd2.netlify.app/',
-        description: 'Implemente',
-        technologies: [
-            {
-                id: 1,
-                name: 'VainillaJS',
-                icon: 'fa-js',
-                color: '#F7E018'
-            },
-            {
-                id: 2,
-                name: 'HTML',
-                icon: 'fa-html5',
-                color: '#F37731'
-            },
-            {
-                id: 3,
-                name: 'CSS',
-                icon: 'fa-css3-alt',
-                color: '#35A8DB'
-            }
-        ],
-    }, {
-        id: 1,
-        name: 'Sudoku Solver',
-        image: '/assets/sudoku-preview.jpeg',
-        link: 'https://ecstatic-albattani-219dd2.netlify.app/',
-        description: 'Implemente',
-        technologies: [
-            {
-                id: 1,
-                name: 'VainillaJS',
-                icon: 'fa-js',
-                color: '#F7E018'
-            },
-            {
-                id: 2,
-                name: 'HTML',
-                icon: 'fa-html5',
-                color: '#F37731'
-            },
-            {
-                id: 3,
-                name: 'CSS',
-                icon: 'fa-css3-alt',
-                color: '#35A8DB'
-            }
-        ],
-    }
+    },
 ]
 
 

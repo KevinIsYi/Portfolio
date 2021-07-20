@@ -20,7 +20,16 @@ export const SidebarMenu = () => {
                     &times;
                 </div>
                 <NavLink
+                    to="/"
+                    exact
+                    className="text-center width-100"
+                    activeClassName="sidebar-menu__active-link"
+                >
+                    Home
+                </NavLink>
+                <NavLink
                     to="/resume"
+                    exact
                     className="text-center width-100"
                     activeClassName="sidebar-menu__active-link"
                 >
@@ -28,7 +37,7 @@ export const SidebarMenu = () => {
                 </NavLink>
                 <NavLink
                     to="/projects"
-                    onClick={closeNav}
+                    exact
                     className="text-center width-100"
                     activeClassName="sidebar-menu__active-link"
                 >
@@ -36,7 +45,7 @@ export const SidebarMenu = () => {
                 </NavLink>
                 <NavLink
                     to="/about"
-                    onClick={closeNav}
+                    exact
                     className="text-center width-100"
                     activeClassName="sidebar-menu__active-link"
                 >
@@ -44,7 +53,7 @@ export const SidebarMenu = () => {
                 </NavLink>
                 <NavLink
                     to="/contact"
-                    onClick={closeNav}
+                    exact
                     className="text-center width-100"
                     activeClassName="sidebar-menu__active-link"
                 >

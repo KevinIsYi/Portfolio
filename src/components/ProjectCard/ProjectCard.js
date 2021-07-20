@@ -32,7 +32,7 @@ export const ProjectCard = ({ projectInfo }) => {
             <a
                 href={link}
                 target="_blank"
-                className="projects__link bold flex width-100 blue-bk"
+                className="projects__link bold flex width-100 blue-bk transition zindex-top"
             >
                 <i class="fas fa-link"></i>
                 <p>Visit</p>

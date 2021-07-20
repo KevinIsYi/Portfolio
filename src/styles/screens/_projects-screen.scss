@@ -8,7 +8,6 @@
 .projects__project-container {
     padding: 10px;
     width: 310px;
-    z-index: -2;
 
     h1 {
         margin: 5px 0;
@@ -35,9 +34,14 @@
     justify-content: center;
     margin-top: 15px;
     padding: 15px 0;
+    cursor: pointer;
 
     p {
         margin: 0;
         text-transform: uppercase;
+    }
+
+    &:hover {
+        filter: brightness(1.1);
     }
 }
