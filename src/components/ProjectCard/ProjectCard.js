@@ -7,8 +7,12 @@ export const ProjectCard = ({ projectInfo }) => {
             <a
                 href={link}
                 target="_blank"
+                rel="noreferrer"
             >
-                <img src={image} />
+                <img
+                    src={image}
+                    alt={name}
+                />
             </a>
             <h1 className="text-center bold blue-text">{name}</h1>
             <h3 className="bold">Technologies used:</h3>
@@ -32,6 +36,7 @@ export const ProjectCard = ({ projectInfo }) => {
             <a
                 href={link}
                 target="_blank"
+                rel="noreferrer"
                 className="projects__link bold flex width-100 blue-bk transition zindex-top"
             >
                 <i class="fas fa-link"></i>
