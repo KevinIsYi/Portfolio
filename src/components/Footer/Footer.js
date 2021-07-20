@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="footer flex fixed width-100">
+        <footer className="footer flex fixed width-100 light-bk">
             <a
                 className="footer__link-container roboto bold flex transition"
                 target="_blank"

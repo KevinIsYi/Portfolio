@@ -1,9 +1,11 @@
 .header__container {
     align-items: center;
+    border-bottom: solid 3px $blue;
     font-size: 18px;
     height: 10vh;
     justify-content: space-around;
-    border-bottom: solid 3px $blue;
+    top: 0;
+    width: 100%;
 }
 
 .header__name {

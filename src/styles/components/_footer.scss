@@ -1,11 +1,12 @@
 .footer {
     align-items: center;
+    background-color: $light;
     border-top: 3px solid $blue;
     bottom: 0;
     height: 49px;
     justify-content: space-evenly;
     left: 0;
-    background-color: $light;
+    z-index: -1;
 }
 
 .footer__line-divisor {

@@ -139,7 +139,7 @@ const projects = [
 
 export const ProjectsPage = () => {
     return (
-        <div className="projects__container roboto center-x flex f-wrap">
+        <div className="projects__container roboto flex f-wrap">
             {
                 projects.map((project) => (
                     <ProjectCard key={project.id} projectInfo={project} />

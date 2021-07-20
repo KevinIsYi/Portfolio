@@ -4,7 +4,7 @@ import { SidebarMenu } from '../SidebarMenu/SidebarMenu';
 export const Header = () => {
 
     return (
-        <header className="header__container flex roboto bold">
+        <header className="header__container fixed flex roboto bold light-bk">
             <Link to="/" className="header__name text-center lobster gray-text">Kevin Rodríguez</Link>
             <nav className="header__nav hidden">
                 <NavLink to="/resume" exact activeClassName="active-link">Resume</NavLink>
